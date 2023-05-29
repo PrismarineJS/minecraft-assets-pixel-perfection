@@ -1,0 +1,27 @@
+{
+  "name": "pack-tools",
+  "version": "1.0.0",
+  "description": "Assets for the Pixel Perfection resource pack by XSSheep",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrismarineJS/minecraft-assets-pixel-perfection.git"
+  },
+  "keywords": [
+    "prismarine",
+    "texture pack"
+  ],
+  "author": "Romain Beaumont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PrismarineJS/prismarine-template/issues"
+  },
+  "homepage": "https://github.com/PrismarineJS/prismarine-template#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}
