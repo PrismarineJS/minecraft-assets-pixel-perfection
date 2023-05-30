@@ -1,3 +1,8 @@
 node_modules/
 package-lock.json
 .vscode
+# Ignore sound files
+data/**/*.ogg
+data/**/*.mp3
+# Temporary files for packs
+tools/*.zip

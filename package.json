@@ -2,10 +2,15 @@
   "name": "pack-tools",
   "version": "1.0.0",
   "description": "Assets for the Pixel Perfection resource pack by XSSheep",
+  "bin": {
+    "pack-update": "tools/update.js"
+  },
   "scripts": {
     "test": "npm run lint",
     "lint": "standard",
-    "fix": "standard --fix"
+    "fix": "standard --fix",
+    "update": "node tools/update.js",
+    "build": "node tools/buildIndex.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +28,8 @@
   "homepage": "https://github.com/PrismarineJS/prismarine-template#readme",
   "devDependencies": {
     "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "basic-args": "^1.2.0"
   }
 }
