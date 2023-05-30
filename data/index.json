@@ -27,6 +27,6 @@
   "1.19.3": {
     "index": "1.19.3/overrides.json",
     "root": "1.19.3/assets/minecraft",
-    "override": "1.19.1"
+    "overrides": "1.19.1"
   }
 }

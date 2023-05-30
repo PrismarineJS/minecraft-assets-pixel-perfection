@@ -2,8 +2,8 @@
 const fs = require('fs')
 const { Readable } = require('stream')
 const cp = require('child_process')
+const { join } = require('path')
 
-// console.log(process.argv)
 // 53603 -- old project id
 // 498697 -- new project id
 const packName = 'Pixel Perfection'
@@ -25,7 +25,7 @@ Example:
     id: { type: Number, description: 'ID of file to download', default: null },
     downloadToPath: { type: String, description: 'Path to save the download to', default: null, alias: 'o' }
   },
-  validate(args) {
+  validate (args) {
     if (!args.latest && !args.id) {
       return 'You must specify either --latest or --id'
     } else if (args.id && !args.downloadToPath) {
@@ -36,24 +36,13 @@ Example:
 })
 projectId = args.projectId
 
-// const links = `
-// 1.8-f1 https://www.curseforge.com/minecraft/texture-packs/pixel-perfection-freshly-updated/download/2270313
-// 1.9.2-f2 https://www.curseforge.com/minecraft/texture-packs/pixel-perfection-freshly-updated/download/2298219
-// 1.11-f3 https://www.curseforge.com/minecraft/texture-packs/pixel-perfection-freshly-updated/download/2353175
-// 1.14-f4 ??
-// 1.15-f5 ??
-// 1.17-f7 https://www.curseforge.com/minecraft/texture-packs/pixel-perfection-legacy/download/3367607
-// 1.19 https://www.curseforge.com/minecraft/texture-packs/pixel-perfection-legacy/download/4401203
-// `.split('\n').filter(l => l.trim()).map(l => l.split(' '))
-
-
 const getDownloadURL = (downloadId) => `https://www.curseforge.com/api/v1/mods/${projectId}/files/${downloadId}/download`
 const checkEndpoint = `https://www.curseforge.com/api/v1/mods/${projectId}/files?pageIndex=0&pageSize=50&sort=dateCreated&sortDescending=true&removeAlphas=true`
 const unzip = (file) => process.platform === 'win32'
   ? cp.execSync(`tar -xf ${file}`)
   : cp.execSync(`unzip ${file}`)
 
-async function fetchLatest() {
+async function fetchLatest () {
   const files = await fetch(checkEndpoint).then(r => r.json())
   // const latest = files.data[0]
   // const filesById = Object.fromEntries(files.data.map(f => [f.id, f]))
@@ -64,19 +53,19 @@ async function fetchLatest() {
   console.table(all)
 }
 
-async function downloadVersion(id, intoDir) {
+async function downloadVersion (id, intoDir) {
   intoDir ??= `./${id}`
   const oldDir = process.cwd()
   process.chdir(__dirname) // Temp go into script dir to store the .zip file
   const fileName = `${id}.zip`
-  const absoluteFilePath = `${__dirname}/${fileName}`
-  async function extract() {
+  const absoluteFilePath = join(__dirname, fileName)
+  async function extract () {
     console.log('Extracting', fileName, 'to', intoDir, '...')
     // Go back to original dir
     process.chdir(oldDir)
     if (fs.existsSync(intoDir)) {
       console.warn(`Directory at '${intoDir}' already exists, do you want to overwrite it? (y/n)`)
-      const answer = await new Promise(r => process.stdin.once('data', r))
+      const answer = await new Promise((resolve) => process.stdin.once('data', resolve))
       if (answer.toString().trim().toLowerCase() !== 'y') {
         console.log('Aborted!')
         process.exit(0)
@@ -109,6 +98,3 @@ if (args.latest) {
 } else if (args.id) {
   downloadVersion(args.id, args.downloadToPath)
 }
-
-// // downloadVersion(2270313, '1.19.3')
-// downloadLatest()

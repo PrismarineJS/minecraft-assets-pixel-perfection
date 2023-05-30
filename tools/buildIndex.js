@@ -1,9 +1,9 @@
 const fs = require('fs')
-const {join} = require('path')
+const { join } = require('path')
 const dataDir = join(__dirname, '../data')
-const dirs = fs.readdirSync(dataDir).sort((a, b) =>  {
-  const A = a.replace('1.', '');
-  const B = b.replace('1.', '');
+const dirs = fs.readdirSync(dataDir).sort((a, b) => {
+  const A = a.replace('1.', '')
+  const B = b.replace('1.', '')
   return parseFloat(A) - parseFloat(B)
 }).filter(dir => dir.startsWith('1.'))
 console.log('Versions', dirs)
@@ -24,27 +24,23 @@ function buildIndexForVersion (version) {
   const oldItemDir = join(dir, '/assets/minecraft/textures/items')
   const newItemDir = join(dir, '/assets/minecraft/textures/item')
   if (fs.existsSync(oldBlockDir)) {
-    console.log('Found old blocks')
     for (const blockFile of fs.readdirSync(oldBlockDir)) {
       const name = blockFile.split('.')[0]
       // Store the relative path to the file
       blocks[name] = 'textures/blocks/' + blockFile
     }
   } else if (fs.existsSync(newBlockDir)) {
-    console.log('Found new blocks')
     for (const blockFile of fs.readdirSync(newBlockDir)) {
       const name = blockFile.split('.')[0]
       blocks[name] = 'textures/block/' + blockFile
     }
   }
   if (fs.existsSync(oldItemDir)) {
-    console.log('Found old items')
     for (const itemFile of fs.readdirSync(oldItemDir)) {
       const name = itemFile.split('.')[0]
       items[name] = 'textures/items/' + itemFile
     }
   } else if (fs.existsSync(newItemDir)) {
-    console.log('Found new items')
     for (const itemFile of fs.readdirSync(newItemDir)) {
       const name = itemFile.split('.')[0]
       items[name] = 'textures/item/' + itemFile
@@ -59,7 +55,6 @@ function buildIndexForVersion (version) {
 
 const index = require(join(dataDir, 'index.json'))
 for (const dir of dirs) {
-  console.log(dir)
   buildIndexForVersion(dir)
   index[dir] ??= {}
   Object.assign(index[dir], {
