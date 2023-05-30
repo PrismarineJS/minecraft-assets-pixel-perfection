@@ -4,13 +4,9 @@
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/PrismarineJS)](https://github.com/sponsors/PrismarineJS)
 [![Official Discord](https://img.shields.io/static/v1.svg?label=PrismarineJS&message=Discord&color=blue&logo=discord)](https://discord.gg/GsEFRM8)
 
+Provide minecraft 1.8, 1.9.2, 1.11, 1.17 and 1.19.3 assets along with JSON index files
 
-WIP
-<!-- Provide minecraft 1.8.8, 1.9, 1.10, 1.11.2, 1.12, 1.13, 1.13.2, 1.14.4, 1.15.2, 1.16.1, 1.16.4, 1.17.1, 1.18.1 and 1.19.1 assets along with json files that help to use them. -->
-
-<!-- Generated using [image_names.js](https://github.com/PrismarineJS/minecraft-jar-extractor/blob/master/image_names.js) -->
-
-Minecraft assets for the [Pixel Perfection texture pack](https://www.planetminecraft.com/texture-pack/pixel-perfection-chorus-edit/)
+Minecraft assets for the [Pixel Perfection texture pack](https://www.planetminecraft.com/texture-pack/pixel-perfection-chorus-edit/).
 
 ## Wrappers
 
