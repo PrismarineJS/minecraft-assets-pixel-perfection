@@ -1,0 +1,8 @@
+{
+    "parent": "block/column_side - mixed",
+    "textures": {
+        "end": "blocks/log_acacia_top",
+        "side": "blocks/log_acacia",
+		"alt": "blocks/log_acacia1"
+    }
+}

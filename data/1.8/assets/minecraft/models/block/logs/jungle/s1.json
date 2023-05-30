@@ -1,0 +1,8 @@
+{
+    "parent": "block/column_side - mixed",
+    "textures": {
+        "end": "blocks/log_jungle_top",
+        "side": "blocks/log_jungle",
+		"alt": "blocks/log_jungle1"
+    }
+}

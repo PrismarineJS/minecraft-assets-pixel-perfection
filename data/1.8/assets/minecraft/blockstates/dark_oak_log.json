@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=y":  [
+			{ "model": "dark_oak_log" },
+			{ "model": "logs/dark_oak/1" }
+		],
+        "axis=z":   [
+			{ "model": "dark_oak_log_side" },
+			{ "model": "logs/dark_oak/s1" }
+		],
+        "axis=x":   [
+			{ "model": "dark_oak_log_side", "y": 90 },
+			{ "model": "logs/dark_oak/s1", "y": 90 }
+		],
+        "axis=none": { "model": "dark_oak_bark" }
+    }
+}

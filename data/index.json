@@ -1,0 +1,32 @@
+{
+  "1.8": {
+    "index": "1.8/overrides.json",
+    "root": "1.8/assets/minecraft",
+    "overrides": "1.8.8"
+  },
+  "1.9.2": {
+    "index": "1.9.2/overrides.json",
+    "root": "1.9.2/assets/minecraft",
+    "overrides": "1.9"
+  },
+  "1.11": {
+    "index": "1.11/overrides.json",
+    "root": "1.11/assets/minecraft",
+    "overrides": "1.11.2"
+  },
+  "1.12": {
+    "index": "1.11/overrides.json",
+    "root": "1.11/assets/minecraft",
+    "overrides": "1.11.2"
+  },
+  "1.17": {
+    "index": "1.17/overrides.json",
+    "root": "1.17/assets/minecraft",
+    "overrides": "1.17.1"
+  },
+  "1.19.3": {
+    "index": "1.19.3/overrides.json",
+    "root": "1.19.3/assets/minecraft",
+    "override": "1.19.1"
+  }
+}

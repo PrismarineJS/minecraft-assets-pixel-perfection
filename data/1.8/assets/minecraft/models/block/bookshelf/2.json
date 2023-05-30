@@ -1,0 +1,98 @@
+{
+	"__createdwith": "opl's Model Maker",
+	"textures": {
+		"side": "blocks/bookshelf2",
+		"top": "blocks/bookshelf_top",
+		"particle": "blocks/bookshelf"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 16, 15],
+			"faces": {
+				"up": {"texture": "#top"},
+				"down": {"texture": "#top"},
+				"west": {"texture": "#side"},
+				"east": {"texture": "#side"},
+				"north": {"texture": "#side"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"up": {"texture": "#top"},
+				"down": {"texture": "#top"},
+				"west": {"texture": "#side"},
+				"east": {"texture": "#side"},
+				"north": {"texture": "#side"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [0, 15, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"up": {"texture": "#top"},
+				"down": {"texture": "#top"},
+				"west": {"texture": "#side"},
+				"east": {"texture": "#side"},
+				"north": {"texture": "#side"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [0, 7, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"up": {"texture": "#top"},
+				"down": {"texture": "#top"},
+				"west": {"texture": "#side"},
+				"east": {"texture": "#side"},
+				"north": {"texture": "#side"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [0, 0, 15],
+			"to": [1, 16, 16],
+			"faces": {
+				"west": {"texture": "#side"},
+				"east": {"texture": "#top"},
+				"north": {"texture": "#top"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [15, 0, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"west": {"texture": "#top"},
+				"east": {"uv": [15, 0, 16, 16],"texture": "#side"},
+				"north": {"uv": [0, 0, 1, 16],"texture": "#side"},
+				"south": {"texture": "#top"}
+			}
+		}, 
+		{
+			"from": [15, 0, 15],
+			"to": [16, 16, 16],
+			"faces": {
+				"west": {"texture": "#top"},
+				"east": {"uv": [0, 0, 1, 16],"texture": "#side"},
+				"north": {"texture": "#top"},
+				"south": {"texture": "#side"}
+			}
+		}, 
+		{
+			"from": [0, 0, 0],
+			"to": [1, 16, 1],
+			"faces": {
+				"west": {"texture": "#side"},
+				"east": {"texture": "#top"},
+				"north": {"uv": [15, 0, 16, 16],"texture": "#side"},
+				"south": {"texture": "#top"}
+			}
+		}
+	]
+}

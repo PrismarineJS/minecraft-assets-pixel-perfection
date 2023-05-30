@@ -1,0 +1,111 @@
+{
+    "__createdwith": "opl's Model Creator",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/door_jungle_lower",
+        "side": "blocks/door_jungle_side",
+        "all": "blocks/door_jungle_lower"
+    },
+    "elements": [
+        {
+            "from": [0,0,13],
+            "to": [3,2,16],
+            "faces": {
+                "down": {
+                    "uv": [8,16,11,13],
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#all"
+                },
+                "east": {
+                    "uv": [16,14,13,16],
+                    "texture": "#all"
+                },
+                "north": {
+                    "uv": [11,14,8,16],
+                    "texture": "#side"
+                },
+                "south": {
+                    "uv": [8,14,11,16],
+                    "texture": "#side"
+                }
+            }
+        },
+        {
+            "from": [0,1,0],
+            "to": [3,16,16],
+            "faces": {
+                "down": {
+                    "uv": [8,0,11,16],
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#all"
+                },
+                "east": {
+                    "uv": [16,0,0,15],
+                    "texture": "#all"
+                },
+                "north": {
+                    "uv": [11,0,8,15],
+                    "texture": "#side"
+                },
+                "south": {
+                    "uv": [8,0,11,15],
+                    "texture": "#side"
+                }
+            }
+        },
+        {
+            "from": [0,0,7],
+            "to": [3,2,12],
+            "faces": {
+                "down": {
+                    "uv": [8,13,11,8],
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#all"
+                },
+                "east": {
+                    "uv": [12,14,7,16],
+                    "texture": "#all"
+                },
+                "north": {
+                    "uv": [11,14,8,16],
+                    "texture": "#side"
+                },
+                "south": {
+                    "uv": [8,14,11,16],
+                    "texture": "#side"
+                }
+            }
+        },
+        {
+            "from": [0,0,0],
+            "to": [3,2,3],
+            "faces": {
+                "down": {
+                    "uv": [0,3,3,0],
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#all"
+                },
+                "east": {
+                    "uv": [3,14,0,16],
+                    "texture": "#all"
+                },
+                "north": {
+                    "uv": [11,14,8,16],
+                    "texture": "#side"
+                },
+                "south": {
+                    "uv": [8,14,11,16],
+                    "texture": "#side"
+                }
+            }
+        }
+    ]
+}

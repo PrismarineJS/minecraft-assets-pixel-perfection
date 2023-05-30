@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=y":  [
+			{ "model": "acacia_log" },
+			{ "model": "logs/acacia/1" }
+		],
+        "axis=z":   [
+			{ "model": "acacia_log_side" },
+			{ "model": "logs/acacia/s1" }
+		],
+        "axis=x":   [
+			{ "model": "acacia_log_side", "y": 90 },
+			{ "model": "logs/acacia/s1", "y": 90 }
+		],
+        "axis=none": { "model": "acacia_bark" }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "__comment": "Fair warning, this format is highly likely to change even more in the future!",
+    "variants": {
+        "half=bottom": [
+			{ "model": "half_slab_brick" },
+			{ "model": "brick/halfslab/1" },
+			{ "model": "brick/halfslab/2" },
+			{ "model": "brick/halfslab/3" },
+			{ "model": "brick/halfslab/4" },
+			{ "model": "brick/halfslab/5" },
+			{ "model": "brick/halfslab/6" },
+			{ "model": "brick/halfslab/7" }
+		],
+		"half=top": [
+			{ "model": "upper_slab_brick" },
+			{ "model": "brick/halfslab/8" },
+			{ "model": "brick/halfslab/9" },
+			{ "model": "brick/halfslab/10" },
+			{ "model": "brick/halfslab/11" },
+			{ "model": "brick/halfslab/12" },
+			{ "model": "brick/halfslab/13" },
+			{ "model": "brick/halfslab/14" }
+		]
+		
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "__comment": "Fair warning, this format is highly likely to change even more in the future!",
+    "variants": {
+        "normal": [
+		{ "model": "cobblestone" },
+		{ "model": "cobble/1" },
+		{ "model": "cobble/2" }
+		]
+    }
+}

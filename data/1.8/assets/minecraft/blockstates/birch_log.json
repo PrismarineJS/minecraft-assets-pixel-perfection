@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=y":  [
+			{ "model": "birch_log" },
+			{ "model": "logs/birch/1" }
+		],
+        "axis=z":   [
+			{ "model": "birch_log_side" },
+			{ "model": "logs/birch/s1" }
+		],
+        "axis=x":   [
+			{ "model": "birch_log_side", "y": 90 },
+			{ "model": "logs/birch/s1", "y": 90 }
+		],
+        "axis=none": { "model": "birch_bark" }
+    }
+}

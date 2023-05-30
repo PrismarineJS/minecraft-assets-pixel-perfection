@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "side": "blocks/command_block",
+		"top": "blocks/command_block_cap",
+		"bottom": "blocks/command_block_cap"
+    }
+}
